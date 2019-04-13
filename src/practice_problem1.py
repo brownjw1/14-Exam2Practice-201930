@@ -447,8 +447,7 @@ class Box(object):
         #    ** TWO **   LINES OF CODE.
         #######################################################################
 
-        a=self.append_string(other_box.contents)
-        other_box.contents=a
+        other_box.contents=self.append_string(other_box.contents)
 
 
     def get_history(self):
